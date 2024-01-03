@@ -1,25 +1,54 @@
-ihello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-hello git
-1
-1
-1
-1
-1
-1
-789
-10  huli.txt hot-fix
-1111
+import java.util.Scanner;
+
+class Atm {
+	public static void main(String[] args) {
+		double balance = 0.0;
+		Scanner mon = new Scanner(System.in);
+		boolean choose = true;
+		
+		do
+		{
+			System.out.println("=========ATM========");
+			System.out.println("\t1、存款");
+			System.out.println("\t2、取款");
+			System.out.println("\t3、显示金额");
+			System.out.println("\t4、退出");
+			System.out.print("请选择（1-4）：");
+
+		int number = mon.nextInt();
+
+		switch(number){
+			case 1:
+				System.out.println("请输入存款额度：");
+				double Cun=mon.nextDouble();
+
+				balance += Cun;
+
+				break;
+			case 2:
+				System.out.println("请输入取款值：");
+				double Qu=mon.nextDouble();
+
+				if (balance > Qu && Qu>=0)
+				{
+					balance -= Qu;
+				}else{
+					System.out.println("余额不足 or 输入错误");}
+
+					break;
+
+			case 3:
+				System.out.println("当前金额为："+balance);
+				break;
+			case 4:
+				System.out.println("即将退出系统！");
+				choose = false;
+				break;
+			default:
+				System.out.println("请重新选择");
+		}
+		}
+		while (choose);
+        mon.close();
+	}
+}
