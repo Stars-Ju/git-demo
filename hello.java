@@ -45,7 +45,7 @@ class Atm {
 				choose = false;
 				break;
 			default:
-				System.out.println("请重新选择");
+				System.out.println("请重新选择!");
 		}
 		}
 		while (choose);
