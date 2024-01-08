@@ -41,11 +41,11 @@ class Atm {
 				System.out.println("当前金额为："+balance);
 				break;
 			case 4:
-				System.out.println("即将退出系统！");
+				System.out.println("即将退出系统1！");
 				choose = false;
 				break;
 			default:
-				System.out.println("请重新选择");
+				System.out.println("请重新选择!");
 		}
 		}
 		while (choose);
