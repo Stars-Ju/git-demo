@@ -41,7 +41,11 @@ class Atm {
 				System.out.println("当前金额为："+balance);
 				break;
 			case 4:
+<<<<<<< HEAD
 				System.out.println("即将退出系统1！");
+=======
+				System.out.println("即将退出系统11！");
+>>>>>>> 839e0a9ece96f5de12810c96191993f1e4c0af13
 				choose = false;
 				break;
 			default:
