@@ -9,7 +9,7 @@ class Atm {
 		do
 		{
 			System.out.println("=========ATM========");
-			System.out.println("\t1、存款");
+			System.out.println("\t1、存款咯");
 			System.out.println("\t2、取款");
 			System.out.println("\t3、显示金额");
 			System.out.println("\t4、退出");
